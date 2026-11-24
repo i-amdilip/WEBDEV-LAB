@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div style="display:flex; flex-direction:column ;justify-content:center ;align-items: center;height:100vh;gap:10px">
-        <h1>Calculator</h1>
-        <div>
-            <label for="input1">First Number</label>
-            <input type="number" required placeholder="Enter FirstNumber" id="input1">
-        </div>
-        <div>
-            <label for="input2">Second Number</label>
-            <input type="number" required placeholder="Enter SecondNumber" id="input2">
-        </div>
-        <div>
-            <button style="padding: 10px;" id="add">+</button>
-            <button style="padding: 10px;" id="sub">-</button>
-            <button style="padding: 10px;" id="mul">*</button>
-            <button style="padding: 10px;" id="div">/</button>
-        </div>
-        <div>
-            <button id="Calculate">Calculate</button>
-            <p >Output is: <span id="Output"></span></p>
+    <div id="mainbox">
+        <div id="box">
+            <h1>Calculator</h1>
+            <div>
+                <label for="input1">First Number</label>
+                <input type="number" required placeholder="Enter FirstNumber" id="input1">
+            </div>
+            <div>
+                <label for="input2">Second Number</label>
+                <input type="number" required placeholder="Enter SecondNumber" id="input2">
+            </div>
+            <div>
+                <button style="padding: 10px;" id="add">+</button>
+                <button style="padding: 10px;" id="sub">-</button>
+                <button style="padding: 10px;" id="mul">*</button>
+                <button style="padding: 10px;" id="div">/</button>
+            </div>
+
+
+            <div id="numpad">
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <br>
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <br>
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <br>
+                <button data-value="0">0</button>
+                <button data-value="backspace">⌫</button>
+
+                <button data-value="clear">C</button>
+            </div>
+
+
+            <div>
+                <button id="Calculate">Calculate</button>
+                <p>Output is: <span id="Output"></span></p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
